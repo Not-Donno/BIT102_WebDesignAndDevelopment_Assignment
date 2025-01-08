@@ -4,16 +4,22 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  
-  body {
-    background-color: #da6161;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-  }
+  .img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+}
+body {
+  padding-top: 56px;
+  background-color: #da6161;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
   
   .container {
     background-color: #fff;
