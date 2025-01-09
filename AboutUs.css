@@ -68,13 +68,18 @@ section{
 
  #home{
 
-background: url("./Img/aboutUS.png")fixed;
+background: url("./Img/aboutUS.png") fixed;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 color: white;
 height: 100vh;
  }
+ 
+ #home h3{ 
+ font-weight: 300;
+ margin: 0;
+ }	
 
 .logo{
 	font-size: 72px;
@@ -85,13 +90,6 @@ height: 100vh;
 	padding: 0 20px 15px 20px;
 
 }
-
-#home h3{
-
-font-weight: 300;
-margin: 0;
-
-}	
 
 #home .learn-more{
 
