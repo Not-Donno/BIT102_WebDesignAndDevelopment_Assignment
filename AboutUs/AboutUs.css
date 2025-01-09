@@ -333,7 +333,7 @@ bottom: 20px;
 .codes{
 	background: url("http://i.imgur.com/nyljaMX.png");
 	background-repeat: no-repeat;
-	background position:absolute;
+	background-position:absolute;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -341,7 +341,7 @@ bottom: 20px;
 .projects{
 	background: url("https://havneethuda.files.wordpress.com/2015/03/blue-hour-traffic.jpg");
 	background-repeat: no-repeat;
-	background position:absolute;
+	background-position:absolute;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -349,7 +349,7 @@ bottom: 20px;
 .clients{
 	background: url("https://silanis-iprospectcom.netdna-ssl.com/blog/wp-content/uploads/2014/11/Fintech.jpg");
 	background-repeat: no-repeat;
-	background position:absolute;
+	background-position:absolute;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -357,7 +357,7 @@ bottom: 20px;
 .feedback{
 	background: url("http://blog.evercoach.com/wp-content/uploads/2015/12/shutterstock_229841482.jpg");
 	background-repeat: no-repeat;
-	background position:absolute;
+	background-position:absolute;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -500,33 +500,3 @@ display: inline-block;
 }
 
 }
-
-
-
-
-
-
-<div class="container text-center support vertical-align">
-	    <div class="row">
-	    <div>
-	    	<h1>Our supported API's</h1>
-	    </div>
-	    	<div class="col-lg-3 col-md-3 col-sm-3 circle1">
-	    		
-	    		<img id="facebook" src="https://www.facebook.com/images/fb_icon_325x325.png">
-	    	</div>
-	    	<div class="col-lg-3 col-md-3 col-sm-3 circle1">
-	    		
-	    		<img id="twitter" src="https://cdn3.iconfinder.com/data/icons/social-icons-5/607/Twitterbird.png">
-	    	</div>
-	    	<div class="col-lg-3 col-md-3 col-sm-3 circle1">
-	    		
-	    		<img id="instagram" src="http://www.logotypes101.com/logos/752/46CB6EFDF45D02DF8C1AE688B5806F85/2016_instagram_logo.png">
-	    	</div>
-	    	<div class="col-lg-3 col-md-3 col-sm-3 circle1">
-	    		
-	    		<img id="google" src="http://www.freeiconspng.com/uploads/google-plus-icon--circle-iconset--martz90-20.png">
-	    	</div>	
-	    </div>	
-	    	
-	</div>
