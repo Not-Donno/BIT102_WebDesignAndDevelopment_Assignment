@@ -74,7 +74,7 @@ section{
 
  #home{
 
-background: url("http://www.pixelstalk.net/wp-content/uploads/2016/04/Microsoft-logo-minimalist-wallpaper-blue.png") fixed;
+background: url("aboutUS.png") fixed;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -498,5 +498,13 @@ display: inline-block;
 .google-map{
 	margin-top: 20px;
 }
-
+.bottom-align {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+header#home .container {
+    position: relative;
+}
 }
