@@ -176,11 +176,11 @@ display: inline-block;
 
 #skills{
 
-background: url("https://awesomewallpaper.files.wordpress.com/2013/03/img7.jpg")fixed;
+background: url("./Img/teaching.png")fixed;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-color: white;
+color: rgb(0, 0, 0);
 
 
 }
@@ -284,7 +284,7 @@ font-size: 16px;
 	#portfolio .portfolio-thumb .portfolio-overlay h2{
 	
 	color:white;
-	font-weight: 300;
+	font-weight: 100;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
 	display: inline-block;
@@ -295,7 +295,7 @@ font-size: 16px;
 	#portfolio .portfolio-thumb .portfolio-overlay a{
 	
 	color: white;
-	font-size: 24px;
+	font-size: 16px;
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
@@ -481,3 +481,13 @@ header#home .container {
     position: relative;
 }
 }
+#footer{
+
+	background: url("./Img/contactMessage.png")fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: rgb(0, 0, 0);
+	
+	
+	}
