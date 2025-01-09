@@ -35,7 +35,43 @@
                 </form>
             </div>
         </div>
-    </nav>    
+    </nav>
+
+    <section class="hero" style="background-image: url('Img/hero.png');">
+        <div class="hero-content">
+            <h1>Welcome to UniPortal</h1>
+            <label for="country-select">Choose a country:</label>
+            <select id="country-select" class="form-select">
+                <option value="Nepal">Nepal</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="UK">UK</option>
+                <option value="US">US</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="about-section" class="about">
+        <h2>About</h2>
+        <p id="about-content">Please select a country to see its details.</p>
+    </section>
+
+    <script>
+        const countrySelect = document.getElementById('country-select');
+        const aboutContent = document.getElementById('about-content');
+
+        const countryDetails = {
+            Nepal: 'Details about Nepal: a, b, c, d.',
+            Malaysia: 'Details about Malaysia: a, b, c, d.',
+            UK: 'Details about UK: a, b, c, d.',
+            US: 'Details about US: a, b, c, d.'
+        };
+
+        countrySelect.addEventListener('change', () => {
+            const selectedCountry = countrySelect.value;
+            aboutContent.textContent = countryDetails[selectedCountry];
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
