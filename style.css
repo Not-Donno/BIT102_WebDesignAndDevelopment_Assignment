@@ -12,7 +12,7 @@
 }
 body {
   padding-top: 56px;
-  background-color: #da6161;
+  background-color: rgb(2, 99, 175);
   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
   display: flex;
   align-items: center;
@@ -45,13 +45,13 @@ body {
   }
   
   .container a {
-    color: #333;
+    color: #070707;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
   }
   .container button {
-    background-color: #520c0c;
+  background-color: rgb(2, 99, 175);
     color: #fff;
     padding: 10px 45px;
     border: 1px solid transparent;
@@ -164,9 +164,9 @@ body {
   }
   
   .toogle {
-    background-color: #a82d2d;
+  background-color: rgb(2, 99, 175);
     height: 100%;
-    background: linear-gradient(to right, #c05c5c, #a82d2d);
+    background: linear-gradient(to right, #2426a0, rgb(2, 99, 175));
     color: #fff;
     position: relative;
     left: -100%;
@@ -210,3 +210,25 @@ body {
   .container.active .toogle-right {
     transform: translateX(200%);
   }
+  /* Add styles for the logo */
+.sign-up .logo img {
+  width: 100px; /* Adjust size as necessary */
+  display: block;
+  margin: 0 auto 5px; /* Centers the logo and adds space below */
+}
+
+/* Style for the user-type dropdown */
+#user-type {
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+}
+
+#user-type:focus {
+  border-color: rgb(2, 99, 175);
+}
