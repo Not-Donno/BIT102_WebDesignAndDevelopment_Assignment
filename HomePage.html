@@ -2,76 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Home Page</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
         <div class="container-fluid">
-            <img class="img" src="Img/logo.png" alt="logo of uniportal/Navbar logo" width="100" height="100">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="img" src="Img/logo.png" alt="logo" width="100" height="100">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
                     <button class="btn btn-outline-primary" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
-    <section class="hero" style="background-image: url('Img/hero.png');">
-        <div class="hero-content">
-            <h1>Welcome to UniPortal</h1>
-            <label for="country-select">Choose a country:</label>
-            <select id="country-select" class="form-select">
-                <option value="Nepal">Nepal</option>
-                <option value="Malaysia">Malaysia</option>
-                <option value="UK">UK</option>
-                <option value="US">US</option>
-            </select>
-        </div>
+    <section class="hero-section mt-5">
+        <h1 class="hero-heading">Welcome to UniPortal</h1>
+        <select id="countrySelect" class="form-select mt-3" onchange="updateAboutText()">
+            <option value="" disabled selected>Choose a country</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+            <option value="Australia">Australia</option>
+        </select>
     </section>
 
-    <section id="about-section" class="about">
-        <h2>About</h2>
-        <p id="about-content">Please select a country to see its details.</p>
+    <section id="cardContainer" class="content-section mt-4 container">
+        
     </section>
 
-    <script>
-        const countrySelect = document.getElementById('country-select');
-        const aboutContent = document.getElementById('about-content');
-
-        const countryDetails = {
-            Nepal: 'Details about Nepal: a, b, c, d.',
-            Malaysia: 'Details about Malaysia: a, b, c, d.',
-            UK: 'Details about UK: a, b, c, d.',
-            US: 'Details about US: a, b, c, d.'
-        };
-
-        countrySelect.addEventListener('change', () => {
-            const selectedCountry = countrySelect.value;
-            aboutContent.textContent = countryDetails[selectedCountry];
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
