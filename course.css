@@ -90,7 +90,7 @@ header img {
 }
 
 .tutorial-videos iframe {
-    width: 100%;
+    width: 600px;
     height: 400px;
     margin-bottom: 20px;
 }
