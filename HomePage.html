@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
         <div class="container-fluid">
-            <img class="img" src="Img/logo.png" alt="logo" width="100" height="100">
+            <img class="img" src="Img/logo.png" alt="logo" width="50" height="50">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,15 +45,27 @@
         <p>Select a country to see more...</p>
     </section>
 
-    <section id="universityDetails" class="content-section mt-4 container d-none">
-        <h2 id="universityName"></h2>
-        <p id="universityDescription"></p>
-        <h3>Affiliated Colleges</h3>
-        <ul id="affiliatedColleges"></ul>
-        <h3>Courses & Fee Structure</h3>
-        <ul id="coursesAndFees"></ul>
-        <button id="proceedButton" class="btn btn-primary mt-3">Proceed</button>
-    </section>
+    <div class="modal fade" id="universityModal" tabindex="-1" aria-labelledby="universityModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="universityModalLabel">University Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Price Range:</h6>
+                    <p id="priceRange">N/A</p>
+                    <h6>Documents Required:</h6>
+                    <ul id="documentsRequired"></ul>
+                    <h6>About:</h6>
+                    <p id="aboutUniversity">N/A</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
